@@ -114,6 +114,12 @@ class Control_Verification_HoneyCaptcha implements Control_Verifications
 		return true;
 	}
 
+	public function hasVisibleTemplate()
+	{
+		// False because the template is set to display:none, so not visible (to humans)
+		return false;
+	}
+
 	public function settings()
 	{
 		global $txt, $scripturl, $modSettings;
